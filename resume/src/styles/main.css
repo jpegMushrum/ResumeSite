@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+body{
+    background-color: #1b1918;
+    
+}
+
+#Title {
+    font-family: 'Agdasima', sans-serif;
+    color: #f22c2f;
+    justify-content: center;
+    font-stretch: ultra-expanded;
+}
+
+.OpenCloseButton {
+
+}
+
+.DropTitle{
+    color: #f22c2f;
+}
+
+.DropBody{
+    Color:#3f5aea;
+}
