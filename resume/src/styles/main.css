@@ -20,5 +20,6 @@ body{
 }
 
 .DropBody{
+    display: none;
     Color:#3f5aea;
 }
