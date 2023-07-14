@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import $ from './other/jquery-3.7.0.js'
 //import $ from 'jquery';
 
@@ -7,27 +7,29 @@ function DropText(props) {
     const Body = props.body;
     const id = props.idButton;
     const idBody = `b-${id}`
-    let isOpen = false;
     
+    const [buttonHTML, setButtonHTML] = useState(<i class="fa-sharp fa-solid fa-chevron-left fa-lg"/>); 
+    const [isOpen, setOpen] = useState(false);
+
+
     const OpenClose = () => {
         if (isOpen) {
-            $("#" + id)[0].innerHTML = "<i class=\"fa-sharp fa-solid fa-chevron-left\"/>";
+            setButtonHTML(<i class="fa-sharp fa-solid fa-chevron-left fa-lg"/>);
             $("#" + idBody).toggle("fast");
-            isOpen = !isOpen;
+            setOpen(false);
         }
         else {
-            
-            $("#" + id)[0].innerHTML = "<i class=\"fa-sharp fa-solid fa-chevron-down\"/>";
+            setButtonHTML(<i class="fa-sharp fa-solid fa-chevron-down fa-lg"/>);
             $("#" + idBody).toggle("fast");
-            isOpen = !isOpen;
+            setOpen(true);
         }
     }
 
     return (
-        <div>
-            <div class = "OpenCloseButton">
+        <div class = "DropText">
+            <div class = "DropTextUpperBlock" onClick = {OpenClose}>
+                <button id = {id} class = "DropButton"> {buttonHTML} </button>
                 <h2 class = "DropTitle"> {Title}</h2>
-                <button id = {id} onClick = {OpenClose}> <i class="fa-sharp fa-solid fa-chevron-left"/></button>
             </div>
             <h3 id = {idBody} class = "DropBody"> {Body}</h3>
         </div>

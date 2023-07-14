@@ -5,6 +5,7 @@ body{
 }
 
 #Title {
+    text-align: center;
     font-family: 'Agdasima', sans-serif;
     color: #f22c2f;
     justify-content: center;
@@ -12,14 +13,64 @@ body{
 }
 
 #byeing {
+    text-align: center;
     color: #f22c2f;
+}
+
+.DropTextUpperBlock {
+    margin-bottom: 15px;
+    padding-top: 1%;
+    
+    text-align: center;    
+}
+
+.DropText {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-top: 1px solid #f22c2f;
+    border-bottom: 1px solid #f22c2f;
+}
+
+li {
+    width: fit-content;
 }
 
 .DropTitle{
     color: #f22c2f;
+    text-align: center;
+    width:auto;
+    display: inline-flex;
+    margin:0;
+}
+
+.DropButton {
+    
+    margin-top: 10px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    color: #f22c2f;
+}
+
+.AchievmentsList {
+    width: fit-content;
+    text-align: left;
+    margin: 0% auto 0% auto;
 }
 
 .DropBody{
+    text-align: center;
+    align-content: center;
+    
     display: none;
     Color:#3f5aea;
+}
+
+@media (orientation: portrait) {
+    .DropText {
+        width:85%;
+    }
+
 }
