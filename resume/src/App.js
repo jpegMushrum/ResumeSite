@@ -2,8 +2,26 @@ import React from 'react'
 import Title from './Title.js'
 import DropText from './DropText.js'
 
+function getAge (date) {
+    let result = 0;
+    if ((date.month > 7) || (date.month === 7 && date.day >= 7)) {
+        result = 1;
+    }
+    result += date.year - 2006;
+    return result;
+}
+
 function App() {
-    const abtme = "Male, 18 y.o., I'm dreaming about gamedev. Now learning JS/TS, React, TON."
+    let today = new Date();
+    today = {
+        day: today.getDate(),
+        month: today.getMonth() + 1, 
+        year: today.getFullYear()
+    };
+    const age = getAge(today);
+    console.log(age);
+
+    const abtme = `Male, ${age} y.o., I'm dreaming about gamedev. Now learning JS/TS, React, TON.`
     const ach = (
         <>
             <ul class = "AchievmentsList">
