@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;700&display=swap');
+
 body{
-    background-color: #1b1918;
-    
+    background-color: #30323D;
+    font-family: 'Victor Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #E8E9ED;
 }
 
 #Title {
     text-align: center;
-    font-family: 'Agdasima', sans-serif;
-    color: #f22c2f;
+    font-size: 700;
+    font-style: bold;
     justify-content: center;
     font-stretch: ultra-expanded;
 }
 
-#byeing {
+#bying {
     text-align: center;
-    color: #f22c2f;
 }
 
 .DropTextUpperBlock {
@@ -29,12 +32,12 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-    border-top: 1px solid #f22c2f;
-    border-bottom: 1px solid #f22c2f;
+    border-top: 1px solid #E8E9ED;
+    border-bottom: 1px solid #E8E9ED;
 }
 
 .DropTitle{
-    color: #f22c2f;
+    
     text-align: center;
     width:auto;
     display: inline-flex;
@@ -42,12 +45,11 @@ body{
 }
 
 .DropButton {
-    
+    color: #E8E9ED;
     margin-top: 10px;
     margin-right: 10px;
     background: none;
     border: none;
-    color: #f22c2f;
 }
 
 .DropBody{
@@ -55,7 +57,7 @@ body{
     align-content: center;
     
     display: none;
-    Color:#3f5aea;
+    
 }
 
 
@@ -64,15 +66,18 @@ li {
 }
 
 a:link {
-    color: #3f5aea;
+    color: #5C80BC;
+    text-decoration: none;
 }
 
 a:visited {
-    color: #3f5aea;
+    color: #5C80BC;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #5ab738;;
+    color: #5C80BC;
+    text-decoration: underline;
 }
 
 ul {
