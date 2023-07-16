@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import $ from './other/jquery-3.7.0.js'
+import $ from 'jquery'
 //import $ from 'jquery';
 
 function DropText(props) {
