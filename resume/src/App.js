@@ -40,7 +40,7 @@ function App() {
     
     const codeForcesInfo = getCodeForcesInfo(); 
 
-    const aboutMe = `Male, ${age} y.o., I'm dreaming about gamedev. Now learning JS/TS, React, TON.`
+    const aboutMe = `Male, ${age} y.o. Like games, guitar and japanese music, anime, manga, novels. Now learning JS/TS, React, TON.`
     const achievments = (
         <>
             <ul>
@@ -48,6 +48,7 @@ function App() {
                 <li><a href = "https://diploma.rsr-olymp.ru/files/rsosh-diplomas-static/compiled-storage-2023/by-code/340230856102/color.pdf"> Open olympiad of schoolchildren (Informatics)</a></li>
                 <li><a href = "https://diploma.rsr-olymp.ru/files/rsosh-diplomas-static/compiled-storage-2023/by-code/340180667460/color.pdf"> "Бельчонок" olympiad (Informatics)</a></li>
                 <li><a href = "https://diploma.rsr-olymp.ru/files/rsosh-diplomas-static/compiled-storage-2022/by-code/290403264600/color.pdf"> "Бельчонок" olympiad (Mathematics)</a></li>
+                <li><a href = "https://ictis.sfedu.ru/news/2022/10/chemp_south/"> 50 place (2 in the city) on an ICPC qualification (комманда СУНЦ ЮФО) </a></li>
             </ul>
         </>
     );
@@ -56,13 +57,13 @@ function App() {
         <>
             <ul>
                 <li>
-                    Porgramming languages: C# (Windows Forms, Unity), C++ (Algorithms and data structures | Olympiad programming), Python (Parsers using API), 
+                    Porgramming languages: C# (Windows Forms), C++ (Algorithms and data structures | Olympiad programming), Python (Parsers using API, Telegram Bots), 
                     JS|TS (React), a few of assembler (nasm)
                 </li>
                 <li>
-                    Hard skills: Programming: Simple UI, API Queries, Algorithms
+                    Hard skills: Simple UI, API Queries, Algorithms, Databases and SQL (MySQL), Managing Server, GIT.
                 </li>
-                <li>Languages: Russian (Native), English (B1+)</li>
+                <li> Languages: Russian (Native), English (B1+)</li>
             </ul>
         </>
     );
